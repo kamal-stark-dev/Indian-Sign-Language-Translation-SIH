@@ -22,6 +22,10 @@ body {
   --highlight-color: #b4e380;
 }
 
+h1 {
+  font-size: 2.8rem;
+}
+
 ul {
   list-style: none;
   display: flex;
@@ -55,6 +59,17 @@ header {
   margin: 0 auto;
 }
 
+#cta-home {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  background-color: var(--highlight-color);
+}
+
+#cta-home i {
+  font-size: 1.4rem;
+}
+
 header nav {
   position: absolute;
   top: 50%;
@@ -69,7 +84,7 @@ nav {
 }
 
 .cta {
-  padding: 0.4rem 1rem;
+  padding: 0.6rem 1.2rem;
   /* border: 1px solid var(--font-color); */
   background-color: var(--highlight-color);
   color: var(--font-color);
@@ -114,12 +129,16 @@ nav {
 }
 
 .home-page .left {
-  max-width: 650px;
+  max-width: 660px;
 }
 
 .home-page .left h1 {
   font-size: 2.8rem;
   margin-bottom: 0.6rem;
+}
+
+span {
+  font-size: 1.1rem;
 }
 
 .home-page .links {
@@ -146,9 +165,10 @@ nav {
 
 .features .card {
   display: flex;
+  min-height: 520px;
   gap: 3rem;
   padding: 2rem;
-  margin: 1.6rem 3rem;
+  margin: 2rem 3rem;
   background-color: #f8f8f8;
   border-radius: 2rem;
 }
@@ -161,16 +181,17 @@ nav {
   border-bottom-left-radius: 7rem;
 }
 
-.features .card video {
+.features .card .media {
   width: 600px;
   border-radius: 1.6rem;
+  object-fit: cover;
 }
 
-.features .card:nth-of-type(even) video {
+.features .card:nth-of-type(even) .media {
   border-bottom-right-radius: 6rem;
 }
 
-.features .card:nth-of-type(odd) video {
+.features .card:nth-of-type(odd) .media {
   border-bottom-left-radius: 6rem;
 }
 
