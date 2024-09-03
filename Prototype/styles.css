@@ -10,13 +10,15 @@
 
 body {
   margin: 0.6rem 2rem;
+  background-color: var(--primary-color);
+  color: var(--font-color);
 }
 
 :root {
   --font-lato: "Lato", Helvetica, sans-serif;
   --primary-color: #fff;
   --secondary-color: #000;
-  --font-color: #444;
+  --font-color: #222;
   --highlight-color: #00ff00;
 }
 
