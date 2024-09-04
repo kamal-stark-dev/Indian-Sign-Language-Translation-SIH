@@ -15,17 +15,17 @@
     <header>
       <h2 id="main-logo">
         HathSayBaat<img
-          src="./assets/icon.png"
+          src="./assets/images/icons/icon-black.svg"
           alt="hand sign image"
           class="logo-image"
         />
       </h2>
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Features</a></li>
-          <li><a href="#">Use-Cases</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#get-started">Get Started</a></li>
+          <li><a href="#contact">Contact</a></li>
           <li><a href="#" class="cta">Try it now</a></li>
         </ul>
       </nav>
@@ -43,20 +43,21 @@
           </li>
           <div id="vertical-line"></div>
           <li>
-            <a href="#"><i class="ri-sun-line"></i></a>
+            <a id="dark-theme">
+              <i class="ri-sun-line"></i>
+            </a>
             <!-- <i class="ri-moon-line"></i> -->
+          </li>
+          <li>
+            <a href="#"><i class="ri-translate-2"></i></a>
           </li>
           <li><a href="#">Log in</a></li>
         </ul>
       </div>
     </header>
 
-    <!--
-    webp - files for GIF
-    -->
-
     <main>
-      <div class="home-page">
+      <div class="home-page" id="home">
         <div class="left">
           <h1>Empowering Communication with Indian Sign Language</h1>
           <span
@@ -65,7 +66,7 @@
           >
           <div class="links">
             <a href="#" id="cta-home"
-              >Try it Now &nbsp;<i class="ri-arrow-right-double-line"></i
+              >Explore the Model &nbsp;<i class="ri-arrow-right-double-line"></i
             ></a>
           </div>
         </div>
@@ -76,7 +77,7 @@
         />
       </div>
 
-      <div class="features">
+      <div class="features" id="features">
         <div class="feature-header">
           <h1>Main Features</h1>
           <span
@@ -87,15 +88,22 @@
           <div class="left">
             <i class="ri-bar-chart-box-fill"></i>
             <h2>Real Time Sign Conversion</h2>
-            <p>Real time sign language to text and speech conversion.</p>
+            <p>
+              Our model supprots real time Indian Sign Language (ISL) to text
+              and speech translation and that too with acuurate results.
+            </p>
             <ul class="points">
               <li>
                 <i class="ri-checkbox-circle-line"></i>Instant Translation
               </li>
               <li><i class="ri-checkbox-circle-line"></i>High Accuracy</li>
+              <li>
+                <i class="ri-checkbox-circle-line"></i>Supports Indian Sign
+                Language (ISL)
+              </li>
             </ul>
             <a href="#" class="cta"
-              >Try yourself &nbsp;<i class="ri-arrow-right-line"></i
+              >Check it out &nbsp;<i class="ri-arrow-right-line"></i
             ></a>
           </div>
           <video loop muted autoplay class="media">
@@ -112,31 +120,51 @@
           <div class="left">
             <i class="ri-live-line"></i>
             <h2>Integration in Video Calls</h2>
-            <p>Real time sign language to text and speech conversion.</p>
+            <p>
+              You can use our model to make video calls with others and talk to
+              them via sign language, the model will convert your gestures and
+              signs to text and speech.
+            </p>
             <ul class="points">
               <li>
-                <i class="ri-checkbox-circle-line"></i>Instant Translation
+                <i class="ri-checkbox-circle-line"></i>Live Video Call
+                Integration
               </li>
-              <li><i class="ri-checkbox-circle-line"></i>High Accuracy</li>
+              <li>
+                <i class="ri-checkbox-circle-line"></i>Speech and Text
+                Conversion
+              </li>
+              <li>
+                <i class="ri-checkbox-circle-line"></i>Ohter Person's Speech to
+                Text Conversion
+              </li>
             </ul>
             <a href="#" class="cta"
-              >Try yourself &nbsp;<i class="ri-arrow-right-line"></i
+              >Video Calling &nbsp;<i class="ri-arrow-right-line"></i
             ></a>
           </div>
         </div>
         <div class="card">
           <div class="left">
             <i class="ri-translate-2"></i>
-            <h2>Multi Language Support</h2>
-            <p>Real time sign language to text and speech conversion.</p>
+            <h2>Multi-Language Support</h2>
+            <p>
+              Our model supprots multiple indian languages and it's really easy
+              to switch between different spoken languages.
+            </p>
             <ul class="points">
               <li>
-                <i class="ri-checkbox-circle-line"></i>Instant Translation
+                <i class="ri-checkbox-circle-line"></i>Supports 10+ Languages
               </li>
-              <li><i class="ri-checkbox-circle-line"></i>High Accuracy</li>
+              <li>
+                <i class="ri-checkbox-circle-line"></i>Easy to toggle languages
+              </li>
+              <li>
+                <i class="ri-checkbox-circle-line"></i>Simple and Clean UI
+              </li>
             </ul>
             <a href="#" class="cta"
-              >Try yourself &nbsp;<i class="ri-arrow-right-line"></i
+              >Different Languages &nbsp;<i class="ri-arrow-right-line"></i
             ></a>
           </div>
           <!-- <video loop muted autoplay>
@@ -148,7 +176,95 @@
             class="media"
           />
         </div>
+        <div class="small-cards">
+          <div class="small-card">
+            <i class="ri-user-follow-line"></i>
+            <h2>User Friendly Interface</h2>
+            <p>
+              HathSayBaat has a user friendly interface which allows
+              non-technical users to navigate easily.
+            </p>
+          </div>
+          <div class="small-card">
+            <i class="ri-folder-upload-line"></i>
+            <h2>Video Uploading</h2>
+            <p>
+              You can also upload pre-recorded videos and process them to get
+              the relevant text or speech for the same.
+            </p>
+          </div>
+          <div class="small-card">
+            <i class="ri-file-edit-line"></i>
+            <h2>Personalization</h2>
+            <p>
+              User can personlalize their caption colors, font-sizes, preferred
+              languages, profile and
+            </p>
+          </div>
+        </div>
       </div>
+
+      <div class="get-started" id="get-started">
+        <div class="started-header">
+          <h1>Get Started</h1>
+          <span>Here are few steps to get started with our services.</span>
+        </div>
+        <div class="help-video">
+          <video autoplay muted loop class="media">
+            <source src="./assets/videos/feature-2-video-calls.mp4" />
+          </video>
+        </div>
+      </div>
+
+      <div class="contact" id="contact">
+        <div class="contact-header">
+          <h1>Contact Us</h1>
+          <span
+            >Having an issue or want to help us with something, here is how you
+            can reach us.</span
+          >
+        </div>
+        <div class="background">
+          <div class="container">
+            <div class="screen">
+              <div class="screen-body">
+                <div class="screen-body-item left">
+                  <div class="app-title">
+                    <span>CONTACT</span>
+                    <span>US</span>
+                  </div>
+                </div>
+                <div class="screen-body-item">
+                  <div class="app-form">
+                    <div class="app-form-group">
+                      <input class="app-form-control" placeholder="NAME" />
+                    </div>
+                    <div class="app-form-group">
+                      <input class="app-form-control" placeholder="EMAIL" />
+                    </div>
+                    <div class="app-form-group">
+                      <input
+                        class="app-form-control"
+                        placeholder="CONTACT NO"
+                      />
+                    </div>
+                    <div class="app-form-group message">
+                      <input class="app-form-control" placeholder="MESSAGE" />
+                    </div>
+                    <div class="app-form-group buttons">
+                      <button class="app-form-button">CANCEL</button>
+                      <button class="app-form-button">SEND</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#home" id="go-to-top"><i class="ri-arrow-up-double-fill"></i></a>
+
+      <footer></footer>
     </main>
     <script src="./main.js"></script>
   </body>
