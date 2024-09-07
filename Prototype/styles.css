@@ -382,7 +382,7 @@ span {
   right: 20px;
   bottom: 0;
   border-radius: 15px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   z-index: -1;
 }
 
@@ -458,4 +458,11 @@ span {
 }
 .app-form-button:hover {
   color: #b9134f;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  font-size: 1.1rem;
+  padding: 0.8rem;
 }

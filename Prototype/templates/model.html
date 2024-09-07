@@ -17,6 +17,7 @@
   <body>
     <header>
       <h2 id="main-logo">HathSayBaat</h2>
+      <a href="#live-model" id="model-nav-tag">Testing Model</a>
       <div class="socials">
         <ul>
           <li>
@@ -43,10 +44,37 @@
         </ul>
       </div>
     </header>
-    <div class="live-model">
-      <h2>HathSayBaat - Test Phase Model</h2>
-      <img src="{{ url_for('video_feed') }}" />
-    </div>
+    <main>
+      <span
+        >Welcome to HathSayBaat's sign detection model. The work here is under
+        developmental stage.</span
+      >
+      <div class="live-model" id="live-model">
+        <h2>HathSayBaat - Test Phase Model</h2>
+        <img src="{{ url_for('video_feed') }}" />
+        <span>Try to make different signs from your hands.</span>
+      </div>
+
+      <hr />
+      <div class="info">
+        <h1>Model Information</h1>
+        <p>
+          Our current models detects the hands in the frame and shows the points
+          and the bounding box of the hand along with the hand type
+          (left/right).
+        </p>
+        <ol>
+          <li>Real time hand detection.</li>
+          <li>Joints and Bounding box rendering.</li>
+          <li>Web integration with the model.</li>
+        </ol>
+      </div>
+      <hr />
+    </main>
+
+    <footer>
+      <p>&copy; Copyright, Starky Developers 2024.</p>
+    </footer>
 
     <script src="{{ url_for('static', filename='model.js') }}"></script>
   </body>

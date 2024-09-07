@@ -2,13 +2,12 @@ from flask import Flask, render_template, Response
 import cv2
 from cvzone.HandTrackingModule import HandDetector
 import numpy as np
-import math
 
 app = Flask(__name__)
 
 # Initialize video capture and hand detector
 cap = cv2.VideoCapture(0)
-detector = HandDetector()
+detector = HandDetector(detectionCon=0.8, maxHands=2)
 
 def generate_frames():
     while True:
@@ -20,12 +19,10 @@ def generate_frames():
         imgOutput = img.copy()
 
         if hands:
-            hand = hands[0]
-            x, y, w, h = hand['bbox']
-            offset = 22
-            imgCrop = img[max(y - offset, 0):min(y + h + offset, img.shape[0]),
-                           max(x - offset, 0):min(x + w + offset, img.shape[1])]
-            cv2.imshow("Image", img)
+            for hand in hands:
+                # Draw bounding box
+                x, y, w, h = hand['bbox']
+                cv2.rectangle(imgOutput, (x, y), (x + w, y + h), (0, 255, 0), 2)  # Green box
 
         # Encode the image as JPEG
         ret, buffer = cv2.imencode('.jpg', imgOutput)
