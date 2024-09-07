@@ -1,0 +1,186 @@
+/* Lato - Font */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-lato);
+}
+
+body {
+  margin-top: 3rem;
+  background-color: var(--primary-color);
+  color: var(--font-color);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --font-lato: "Lato", Helvetica, sans-serif;
+  --primary-color: #fff;
+  --secondary-color: #000;
+  --font-color: #222;
+  --highlight-color: #b4e380;
+  --card-bg-color: #f8f8f8;
+}
+
+.dark {
+  --primary-color: #222;
+  --secondary-color: #fff;
+  --font-color: #fff;
+  --card-bg-color: #444;
+}
+
+h1 {
+  font-size: 2.8rem;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+header a:hover {
+  color: var(--highlight-color);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 0.5rem 2rem;
+  background-color: var(--primary-color);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+#vertical-line {
+  width: 2px;
+  height: 2rem;
+  background-color: var(--font-color);
+  margin: 0 auto;
+}
+
+#cta-home {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  background-color: var(--highlight-color);
+}
+
+#cta-home i {
+  font-size: 1.4rem;
+}
+
+header nav {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+}
+
+nav {
+  flex-grow: 1; /* Allow nav to take up available space */
+  display: flex;
+  justify-content: center; /* Center the nav items */
+}
+
+.cta {
+  padding: 0.6rem 1.2rem;
+  /* border: 1px solid var(--font-color); */
+  background-color: var(--highlight-color);
+  color: var(--font-color);
+  border-radius: 2rem;
+}
+
+.cta:hover,
+#cta-home:hover {
+  background-color: var(--font-color);
+  color: var(--primary-color);
+}
+
+#main-logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logo-image {
+  width: 4rem;
+  margin-top: -6px;
+  padding-left: 6px;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+}
+
+.socials a {
+  font-size: 1.1rem;
+}
+
+.socials i {
+  font-size: 1.6rem;
+  display: inline;
+}
+
+body.dark {
+  background-color: #121212;
+  color: white;
+}
+
+body.dark .socials i.ri-sun-line {
+  display: none;
+}
+
+body.dark .socials i.ri-moon-line {
+  display: inline;
+}
+
+body .socials i.ri-moon-line {
+  display: none;
+}
+
+body .socials i.ri-sun-line {
+  display: inline;
+}
+
+span {
+  font-size: 1.1rem;
+}
+
+/* Main Code for Model.html styling */
+
+.live-model {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: var(--card-bg-color);
+  width: 60%;
+  margin: 4rem auto;
+  border-radius: 12px;
+}
+
+.live-model img {
+  height: 500px;
+  border-radius: 12px;
+}
