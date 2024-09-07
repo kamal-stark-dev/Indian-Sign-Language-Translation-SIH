@@ -6,6 +6,8 @@ This project is a tool for deaf and har-of-hearing communit which let's them com
 
 Project Prototype - [Link](https://kamal-stark-dev.github.io/Indian-Sign-Language-Translation-SIH/Prototype/#home)
 
+Project Details - [Details](./Notes.md)
+
 ## Features
 
 1. Real time translation
