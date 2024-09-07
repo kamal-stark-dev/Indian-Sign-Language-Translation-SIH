@@ -4,6 +4,8 @@ HathSayBaat is a tool which helps the deaf and the hard-of-hearing community to 
 
 ![](./Prototype/assets/images/10100507.jpg)
 
+Their are over 63 million deaf people in India (WHO Report), and this is not a small number. We all know they use sign languages to talk to others but not everyone knows sign language which makes it difficult for them to communicate with them. That's why to tackle this problem we have came up with a solution which is a website that can convert the Indian Sign Language into text and speech which can also be translated into multiple regional languages.
+
 # Features
 
 > 1. Real Time Translation
